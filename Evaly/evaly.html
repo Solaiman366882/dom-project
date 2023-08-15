@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goriber Evaly</title>
+    <style>
+        .evaly-section{
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="evaly-section">
+        <h1>Goriber Evaly Rebooted .</h1>
+        <textarea name="" id="text-area" cols="50" rows="15" placeholder="Please leave a review"></textarea>
+        <br><br>
+        <button id="submit-btn">Submit</button>
+        <div class="review-area">
+            <h1 id="user-review">User Review</h1>
+        </div>
+    </section>
+    <script>
+        document.getElementById('submit-btn').addEventListener('click',function(){
+            const p = document.createElement('p');
+            const textAreaElement = document.getElementById('text-area');
+            const areaValue = textAreaElement.value;
+            p.innerText = areaValue;
+            document.querySelector('.review-area').appendChild(p);
+            textAreaElement.value = '';
+
+        })
+    </script>
+</body>
+</html>
