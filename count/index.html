@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count App</title>
+    <style>
+        h1{
+            font-size: 45px;
+            font-family: cursive;
+            color: chocolate;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            font-family: cursive;
+        }
+        .count-area{
+            margin: 30px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            background-color: limegreen;
+            border-radius: 4px;
+        }
+        .btn:last-child{
+            background-color: lightseagreen;
+        }
+        .btn-area{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Welcome to my Count App &#128525 . </h1>
+        <div class="count-area">
+            <h2 id="count-display">0</h2>
+            <div class="btn-area">
+                <button class="btn" id="plus-btn">+</button>
+                <button class="btn" id="minus-btn">-</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="count.js"></script>
+</body>
+</html>
